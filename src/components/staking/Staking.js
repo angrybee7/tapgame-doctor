@@ -59,9 +59,9 @@ const Staking = () => {
         </section>
 
         {/* Stake Your NFT Section */}
-        <section className="bg-gray-800 pb-5 border border-gray-700 rounded-2xl ">
+        <section className="bg-gray-800 pb-5 border border-gray-700 rounded-xl ">
           <div className="flex items-center justify-center">
-            <div className="rounded-b-lg bg-[#181f32] border border-blue-700 py-1 px-6 sm:px-12">
+            <div className="rounded-b-3xl bg-[#181f32] border border-blue-700 py-1 px-6 sm:px-12">
               <h2 className="text-blue-700 font-bold text-xs sm:text-sm text-center">
                 STAKE YOUR NFT'S
               </h2>

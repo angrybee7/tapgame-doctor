@@ -39,7 +39,7 @@ const Minting = () => {
         {/* Current Minting Section */}
         <section className="bg-gray-800 pb-5 border border-gray-700 rounded-2xl space-y-3 px-3 sm:px-4">
           <div className="flex justify-center">
-            <div className="rounded-b-lg bg-[#181f32] border border-blue-700 py-1 px-6 sm:px-12 text-center">
+            <div className="rounded-b-3xl bg-[#181f32] border border-blue-700 py-1 px-6 sm:px-12 text-center">
               <h2 className="text-blue-700 font-bold text-xs sm:text-sm">
                 CURRENT MINTING
               </h2>
