@@ -57,7 +57,7 @@ const Home = () => {
               className="w-92 h-92 sm:w-80 sm:h-80"
             />
           </div>
-          <button className="gap-1 flex items-center px-4 py-1 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 text-sm sm:px-6 sm:py-1.5 sm:text-base">
+          <button className="gap-1 z-50 flex items-center px-4 py-1 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 text-sm sm:px-6 sm:py-1.5 sm:text-base">
             <img src={btn_tap} className="w-4 sm:w-5" />
             <p>Tap Me</p>
           </button>
