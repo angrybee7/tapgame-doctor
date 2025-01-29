@@ -30,7 +30,7 @@ const Staking = () => {
 
   return (
     <div className="pt-16 h-screen text-white flex flex-col justify-between items-center py-2 min-w-[320px] max-w-full">
-      <main className="p-3 pb-20 sm:p-4 space-y-4 w-full">
+      <main className="p-6 pb-20 sm:p-4 space-y-4 w-full">
         
         {/* NFT Staked Section */}
         <section className="bg-gray-800 py-2 border border-gray-700 rounded-2xl space-y-3 px-2">

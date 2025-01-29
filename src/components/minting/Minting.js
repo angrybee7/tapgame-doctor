@@ -70,7 +70,7 @@ const Minting = () => {
 
         {/* Minting Cards Section */}
         <section className="pb-16 rounded-2xl space-y-4">
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 justify-between">
             {[episode1_all, episode2_all].map((img, index) => (
               <div key={index} className="overflow-hidden shadow-lg w-full sm:w-60">
                 {/* Image Section */}

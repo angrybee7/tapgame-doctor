@@ -11,7 +11,7 @@ import FooterNav from "../layouts/FooterNav";
 const Home = () => {
   const value = 50;
   return (
-    <div className="z-40 h-screen pt-20 pb-24 text-white flex flex-col justify-between items-center py-2 min-w-[320px] max-w-full">
+    <div className="z-40 h-screen pt-20 pb-24 text-white flex flex-col justify-between items-center py-2 px-6 min-w-[320px] max-w-full">
       {/* Main Content */}
       <div className="flex flex-col items-center justify-center w-full">
         <div className="absolute w-full flex justify-center items-center top-[115px] sm:top-[115px]">
@@ -20,7 +20,7 @@ const Home = () => {
             <p className="text-[10px] sm:text-xs text-white">level</p>
           </div>
         </div>
-        <div className="flex justify-between bg-[#1D1D20] rounded-xl border border-gray-700 p-2 mb-3 w-[90%] sm:w-3/4">
+        <div className="flex justify-between bg-[#1D1D20] rounded-xl border border-gray-700 p-2 mb-3 w-full">
           <div className="text-left">
             <div className="flex">
               <p className="text-[10px] sm:text-xs text-gray-400">Daily Limit</p>
@@ -65,16 +65,17 @@ const Home = () => {
       </div>
 
       {/* Progress Bar */}
-      <div className="w-[90%] px-2 py-1 sm:w-3/4">
+      <div className=" px-2 py-1 w-full">
         <div className="w-full bg-gray-600 h-1.5 sm:h-2 rounded-full overflow-hidden">
           <div
             className="bg-blue-500 h-full rounded-full transition-all duration-500 ease-out"
             style={{ width: `${value}%` }}
           ></div>
         </div>
-        <div className="flex justify-start text-[10px] sm:text-sm mt-2">
-          <img src={lightning_img} className="w-3 sm:w-4" />
-          <p>4900/5000</p>
+        <div className="flex justify-between text-[10px] sm:text-sm mt-2">
+          <div className="flex"><img src={lightning_img} className="w-3 sm:w-4" />
+          <p>4900/5000</p></div>
+          <p>100%</p>
         </div>
       </div>
     </div>

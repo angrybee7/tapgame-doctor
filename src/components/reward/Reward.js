@@ -8,11 +8,11 @@ import React from "react";
 import dolar from "../../assets/dolar.png";
 const Reward = () => {
   return (
-    <div className="h-screen pt-16 pb-20 text-white flex flex-col justify-between items-center py-2 min-w-[320px] max-w-full">
+    <div className="h-screen pt-16 pb-20 text-white flex flex-col justify-between items-center py-2 px-4 min-w-[320px] max-w-full">
       <main className="p-3 sm:p-4 space-y-4 w-full pb-20">
         
         {/* Balance and Token Info */}
-        <section className="bg-gray-800 p-3 sm:p-4 rounded-2xl border border-gray-700 space-y-3">
+        <section className="bg-gray-800 p-3 sm:p-2 rounded-2xl border border-gray-700 space-y-3">
           <div className="flex  justify-between items-center text-center sm:text-left">
             <div>
               <p className="flex font-bold text-lg sm:text-2xl text-yellow-400 mt-2 items-center">
@@ -27,7 +27,7 @@ const Reward = () => {
               <p className="text-xs sm:text-sm text-gray-400">BEP20 Token</p>
             </div>
             <div className="mt-3 sm:mt-0">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#181f32] border border-blue-700 flex flex-col items-center justify-center">
+              <div className="w-16 h-16 sm:w-16 sm:h-16 rounded-full bg-[#181f32] border border-blue-700 flex flex-col items-center justify-center">
                 <p className="text-lg sm:text-2xl font-bold text-white">01</p>
                 <p className="text-xs text-gray-400">Level</p>
               </div>
@@ -55,7 +55,7 @@ const Reward = () => {
               <label className="text-blue-700 font-bold text-xs sm:text-sm">
                 Converting Amount
               </label>
-              <div className="flex items-center bg-blue-800 rounded-xl p-3 sm:p-4">
+              <div className="flex items-center border border-gray-700 rounded-xl p-3 sm:p-4">
                 <input
                   type="text"
                   placeholder="Enter UNICE Amount"

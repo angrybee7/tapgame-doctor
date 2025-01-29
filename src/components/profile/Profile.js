@@ -16,7 +16,7 @@ const Profile = () => {
   return (
     <div className="pt-16 h-screen text-white flex flex-col justify-between items-center py-2 min-w-[320px] max-w-full">
       {/* Main Content */}
-      <main className="pb-20 p-3 sm:p-4 space-y-4 w-full">
+      <main className="pb-20 p-6 sm:p-4 space-y-4 w-full">
         
         {/* Balance and Token Info */}
         <section className="bg-gray-800 p-3 sm:p-4 rounded-2xl border border-gray-700 space-y-3">
