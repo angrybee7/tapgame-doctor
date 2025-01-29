@@ -8,7 +8,7 @@ import translate from "../../assets/translate.png"
 
 const Header = () => {
   return (
-    <div className="w-full flex justify-between items-center px-4 py-2  bg-black rounded-t-xl">
+    <div className="fixed top-0 w-full  flex  justify-between items-center px-4 py-2  bg-black rounded-t-xl">
       {/* User Info */}
       <div className="flex gap-2 items-center bg-[#1D1D20] p-2 rounded-xl border-2 border-gray-700">
         <img src={header_logo}/>

@@ -17,7 +17,7 @@ const FooterNav = () => {
   ];
 
   return (
-    <div className="w-full bg-[#1D1C1C] flex justify-around py-3 rounded-b-xl border-t-2 border-[#312d2d] font-pixelify-Sans">
+    <div className="fixed bottom-0 w-full bg-[#1D1C1C] flex justify-around py-3 rounded-b-xl border-t-2 border-[#312d2d] font-pixelify-Sans">
       <nav className="flex justify-between w-full px-6">
         <Link to="staking" className="flex flex-col items-center text-xs font-medium font-pixelify">
           <img src={staking_img} className="w-6 h-6 "></img>
