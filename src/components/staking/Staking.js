@@ -30,7 +30,7 @@ const Staking = () => {
 
   return (
     <div className="pt-16 h-screen text-white flex flex-col justify-between items-center py-2 min-w-[320px] max-w-full">
-      <main className="p-6 pb-20 sm:p-4 space-y-4 w-full">
+      <main className="p-6 pb-20 sm:pb-20 sm:px-8 space-y-4 w-full">
         
         {/* NFT Staked Section */}
         <section className="bg-gray-800 py-2 border border-gray-700 rounded-2xl space-y-3 px-2">
@@ -70,7 +70,7 @@ const Staking = () => {
 
           {/* Staked NFTs Info */}
           {[{ img: avatar1, title: "STAKED NFT'S", desc: "YOUR CURRENT STAKED NFT'S" },
-            { img: avatar2, title: "STAKED EARNED", desc: "TOTAL REWARD EARNED FROM STAKING" }]
+            { img: avatar2, title: "STAKED EARNED", desc: "YOUR CURRENT STAKED NFT'S" }]
             .map((item, index) => (
               <div key={index} className="flex justify-between border-b border-gray-700 p-2 sm:p-4">
                 <div className="flex items-center space-x-2 sm:space-x-3">

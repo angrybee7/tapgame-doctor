@@ -6,23 +6,17 @@ import Staking from "./components/staking/Staking";
 import Minting from "./components/minting/Minting";
 import Reward from "./components/reward/Reward";
 import Profile from "./components/profile/Profile";
+import Mint_Detail from "./components/minting/Mint_Detail";
 
-import circle from "./assets/circle.png";
-import gradient from "./assets/gradient.png";
-import virus from "./assets/virus.png";
+import bg_img from "./assets/bg_img.png"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      {/* <div className="z-0 flex h-screen w-full items-center justify-center absolute">
-      <img src={gradient} className="-z-10 absolute mt-[-150px]" />
+    <div className="App font-roboto">
+      
 
-      <img src={circle} className="-z-10 absolute" />
-        <img src={virus} className="-z-10 absolute  bg-no-repeat" />
-      </div> */}
-
-      <div className="  bg-darkBlue rounded-2xl  h-screen overflow-auto">
+      <div className="   rounded-2xl  h-screen overflow-auto" style={{backgroundImage: `url(${bg_img})`,backgroundSize: 'cover', backgroundPosition: 'center'}}>
      
         <BrowserRouter>
           <Header />
@@ -32,8 +26,9 @@ function App() {
             <Route path="/minting" element={<Minting />} />
             <Route path="/reward" element={<Reward />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/minting/mint_detail" element={<Mint_Detail />} />
           </Routes>
-          <FooterNav />
+          <FooterNav/>
         </BrowserRouter>
       </div>
     </div>

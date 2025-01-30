@@ -6,10 +6,15 @@ import episode1_all from "../../assets/episode1_all.png";
 import episode2_all from "../../assets/episode2_all.png";
 import Header from "../layouts/Header";
 import FooterNav from "../layouts/FooterNav";
+import { useNavigate } from 'react-router-dom';
 
 const Minting = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/minting/mint_detail'); // Navigate to the '/about' route
+  };
   return (
-    <div className="h-screen  pt-16   text-white flex flex-col justify-between items-center px-3 sm:px-4  min-w-[320px] max-w-full">
+    <div className="h-screen  pt-16  text-white flex flex-col justify-between items-center px-3 sm:px-4  min-w-[320px] max-w-full">
       <main className="p-3 sm:p-4 space-y-4 w-full">
         
         {/* Balance and Token Info */}
@@ -27,8 +32,8 @@ const Minting = () => {
               </p>
               <p className="text-xs sm:text-sm text-gray-400">BEP20 Token</p>
             </div>
-            <div className="mt-3 sm:mt-0">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#181f32] border border-blue-700 flex flex-col items-center justify-center">
+            <div className="">
+              <div className="w-16 h-16  rounded-full bg-[#181f32] border border-blue-700 flex flex-col items-center justify-center">
                 <p className="text-lg sm:text-2xl font-bold text-white">01</p>
                 <p className="text-xs text-gray-400">Level</p>
               </div>
@@ -84,7 +89,7 @@ const Minting = () => {
                     <p className="text-yellow-400 text-xs sm:text-sm">BNB: $56.90</p>
                   </div>
                   {/* Button */}
-                  <button className="h-8 px-3 sm:px-4 bg-blue-500 text-white text-xs sm:text-sm rounded-md hover:bg-blue-600">
+                  <button className="h-8 px-3 sm:px-4 bg-blue-500 text-white text-xs sm:text-sm rounded-md hover:bg-blue-600" onClick={handleClick}>
                     MINT NOW
                   </button>
                 </div>
