@@ -14,13 +14,13 @@ import virus from "./assets/virus.png";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App  relative">
-      <div className="z-0 flex h-screen w-full items-center justify-center absolute">
+    <div className="App">
+      {/* <div className="z-0 flex h-screen w-full items-center justify-center absolute">
       <img src={gradient} className="-z-10 absolute mt-[-150px]" />
 
       <img src={circle} className="-z-10 absolute" />
         <img src={virus} className="-z-10 absolute  bg-no-repeat" />
-      </div>
+      </div> */}
 
       <div className="  bg-darkBlue rounded-2xl  h-screen overflow-auto">
      

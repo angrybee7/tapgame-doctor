@@ -14,9 +14,9 @@ import FooterNav from "../layouts/FooterNav";
 
 const Profile = () => {
   return (
-    <div className="pt-16 h-screen text-white flex flex-col justify-between items-center py-2 min-w-[320px] max-w-full">
+    <div className="pt-16 pb-16 h-screen text-white flex flex-col justify-between items-center  min-w-[320px] max-w-full">
       {/* Main Content */}
-      <main className="pb-20 p-6 sm:p-4 space-y-4 w-full">
+      <main className="pb-20  p-6 sm:p-4 space-y-4 w-full">
         
         {/* Balance and Token Info */}
         <section className="bg-gray-800 p-3 sm:p-4 rounded-2xl border border-gray-700 space-y-3">
@@ -36,7 +36,7 @@ const Profile = () => {
         </section>
 
         {/* Profile Section */}
-        <section className="bg-gray-800 pb-5 border border-gray-700 rounded-2xl space-y-3 px-3 sm:px-4">
+        <section className="bg-gray-800 mb-16 border border-gray-700 rounded-2xl space-y-3 px-3 sm:px-4">
           <div className="flex justify-center">
             <div className="rounded-b-3xl bg-[#181f32] border border-blue-700 py-1 px-12 sm:px-24 text-center">
               <h2 className="text-blue-700 font-bold text-xs sm:text-sm">PROFILE</h2>
