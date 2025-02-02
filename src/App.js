@@ -8,13 +8,14 @@ import Reward from "./components/reward/Reward";
 import Profile from "./components/profile/Profile";
 import Mint_Detail from "./components/minting/Mint_Detail";
 
+
 import bg_img from "./assets/bg_img.png"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App font-roboto">
-      
+
 
       <div className="   rounded-2xl  h-screen overflow-auto" style={{backgroundImage: `url(${bg_img})`,backgroundSize: 'cover', backgroundPosition: 'center'}}>
      
@@ -22,6 +23,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/staking" element={<Staking />} />
             <Route path="/minting" element={<Minting />} />
             <Route path="/reward" element={<Reward />} />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import home_main_img from "../../assets/home_main_img.png";
 import arrow_right from "../../assets/arrow_right.png";
 import dolar from "../../assets/dolar.png";
@@ -8,10 +8,63 @@ import btn_tap from "../../assets/btn_tab.png";
 import Header from "../layouts/Header";
 import FooterNav from "../layouts/FooterNav";
 
+import Lottie from "react-lottie";
+
+import v1 from "../../assets/v1.png";
+import v2 from "../../assets/v2.png";
+import v3 from "../../assets/v3.png";
+import v4 from "../../assets/v4.png";
+import v5 from "../../assets/v5.png";
+import v6 from "../../assets/v6.png";
+
 const Home = () => {
   const value = 50;
+
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const handleClick = () => {
+    setIsAnimating(true);
+    setTimeout(() => {
+      setIsAnimating(false);
+    }, 2000); // Adjust duration as needed
+  };
+
+  const lottieOptions = {
+    loop: false,
+    autoplay: false,
+  };
   return (
     <div className=" h-screen px-6 mb-8 sm:mb-24 text-white flex flex-col justify-between items-center py-20  min-w-[320px] max-w-full">
+      {/* <div className=" w-40 h-40 mt-10 overflow-hidden absolute  inline-block">
+        <div
+          className={`absolute w-full h-full transition-transform duration-1000 ${
+            isAnimating ? "-translate-y-40" : "translate-y-0"
+          }`}
+        >
+          <img
+            src={v1}
+            className={`w-8 top-40 right-20 absolute  inline-block`}
+          />
+          <img src={v2} className="w-8 top-56 left-20 absolute  inline-block" />
+          <img
+            src={v3}
+            className="w-8 top-80 right-32 absolute  inline-block"
+          />
+          <img src={v4} className="w-8 top-72 left-24 absolute  inline-block" />
+          <img src={v5} className="w-8 top-96 left-32 absolute  inline-block" />
+          <img
+            src={v6}
+            className="w-8 top-56 right-32 absolute  inline-block"
+          />
+          <Lottie
+            options={lottieOptions}
+            height={160}
+            width={160}
+            isStopped={!isAnimating}
+          />
+        </div>
+      </div> */}
+
       {/* Main Content */}
       <div className="flex  flex-col items-center justify-center w-full">
         <div className="flex relative justify-between bg-[#1D1D20] rounded-xl border border-gray-700 p-2 mb-3 w-full">
@@ -52,18 +105,21 @@ const Home = () => {
       </div>
 
       {/* Image and Button */}
-      <div className="  ">
+      <div className="">
         <div className="px-8  h-full flex flex-col justify-center items-center">
           <div className="relative">
             <img src={home_main_img} alt="Character" className="w-92 h-92 " />
           </div>
-          <button className="gap-1  flex items-center px-4 py-1 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-700 text-sm sm:px-6 sm:py-1.5 sm:text-base">
+
+          <button
+            className="gap-1  flex items-center px-4 py-1 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-700 text-sm sm:px-6 sm:py-1.5 sm:text-base"
+            onClick={handleClick}
+          >
             <img src={btn_tap} className="w-4 sm:w-5" />
             <p>Tap Me</p>
           </button>
         </div>
       </div>
-
       {/* Progress Bar */}
       <div className="mt-3 px-2 py-1 w-full">
         <div className="w-full bg-gray-600 h-1.5 sm:h-2 rounded-full overflow-hidden">
